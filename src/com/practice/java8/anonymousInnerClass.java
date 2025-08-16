@@ -1,23 +1,21 @@
 package com.practice.java8;
 
-
 public class anonymousInnerClass {
 
     public static void main(String[] args) {
 
-     // Anonymous Inner Class
+        // Anonymous Inner Class
         Employee employee = new Employee() {
 
             @Override
-            public String getSalary(){
+            public String getSalary() {
                 return "10";
             }
 
-       @Override
-            public String getDesignation(){
+            @Override
+            public String getDesignation() {
                 return "Software Engineer";
             }
-
         };
 
         System.out.println("Employee Salary: " + employee.getSalary());
